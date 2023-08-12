@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Mental Health Project</title>
-    <link rel="stylesheet" href="styles_check.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles_check.css" />
+  </head>
+  <body>
     <section class="side-bar">
-        <button>New chat</button>
-        <div class="history"></div>
-        <nav>
-            <p>Made by KH Sakib</p>
-        </nav>
+      <button>New chat</button>
+      <div class="history"></div>
+      <nav>
+        <p>Made by KH Sakib</p>
+      </nav>
     </section>
 
-
-
-
     <div class="main-container">
+      <div class="top-bar">
         <div class="header-info">
-            <div class="logo"> 
-                <img src="result.png" alt="">
+          <div class="logo">
+            <img src="result.png" alt="" />
+          </div>
+          <div class="info">
+            <h1>MINDFULGPT</h1>
+            <h2 class="description">
+              A generative AI for Mental Health Analysis
+            </h2>
+            <p>Welcome to Mental Health GTP</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="line"></div> -->
+
+      <div class="qa-section">
+        <p>You can ask me any quetion?</p>
+      </div>
+
+      <div class="root-input-output">
+        <div class="input-output">
+          <div class="bottom-section">
+            <div class="input-container">
+              <input type="text" />
+              <div id="submit">➢</div>
             </div>
-            <div class="info">
-                <h1>MINDFULGPT</h1>
-                <h2 class="description">A generative AI for Mental Health Analysis</h2>
-                <p>Welcome to Mental Health GTP</p>
-            </div>
+          </div>
+
+          <div class="output-backgruond">
+            <span></span>
+            <span id="output"></span>
+          </div>
         </div>
-        
-        <div class="line">
-        </div>
-        
-        <p id="output"></p>
-        <div class="bottom-section">
-        <div class="input-container">
-            <input type="text">
-            <div id="submit">➢</div>
-        </div>
-    </div>
+      </div>
     </div>
 
-
-<script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
